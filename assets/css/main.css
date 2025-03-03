@@ -2981,6 +2981,12 @@ body.is-menu-visible #menu {
   line-height: inherit;
   position: absolute;
   top: 0;
+  width: 96px;
+}
+@media screen and (max-width: 736px) {
+  #header h1 {
+    width: 60px;
+  }
 }
 #header h1 a {
   border: 0;
@@ -2995,6 +3001,9 @@ body.is-menu-visible #menu {
 }
 #header h1 a img {
   height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #header nav {
   height: inherit;

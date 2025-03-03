@@ -1722,6 +1722,12 @@ body.is-menu-visible {
     line-height: inherit;
     position: absolute;
     top: 0;
+    width: 96px;
+
+    @include breakpoint('<=small') {
+
+      width: 60px;
+    }
 
     a {
       border: 0;
@@ -1735,6 +1741,8 @@ body.is-menu-visible {
 
       img {
         height: 100%;
+        width: 100%;
+        object-fit: contain;
       }
     }
   }
