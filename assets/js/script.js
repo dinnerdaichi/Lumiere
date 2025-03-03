@@ -1,10 +1,10 @@
 // Swiperの初期化
 const swiper = new Swiper('.swiper1', {
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 3000,
+  },
   speed: 1000,
-  slidesPerView: 1.75, //
+  slidesPerView: 1, //
   spaceBetween: 20, // スライド間の間隔
   loop: true, // ループ設定
   centeredSlides: true, // アクティブなスラ
@@ -27,14 +27,28 @@ const swiper = new Swiper('.swiper1', {
   //     slidesPerView: 1.5, // 3枚表示
   //     spaceBetween: 10,
   //   },
-  //   768: {
-  //     slidesPerView: 1.5, // 3枚表示
-  //     spaceBetween: 10,
-  //   },
+    736: {
+      slidesPerView: 1.75, // 3枚表示
+      spaceBetween: 10,
+    },
   //   480: {
   //     slidesPerView: 1.5, // 1枚表示
   //     spaceBetween: 0,
   //   }
   // },
 
+});
+
+
+gsap.utils.toArray(".fade-in").forEach((el) => {
+  gsap.to(el, {
+    opacity: 1,
+    duration: 1,
+    y: 0,
+    scrollTrigger: {
+      trigger: el,
+      start: "top 80%", // 画面の80%位置にきたら開始
+      toggleActions: "play none none none",
+    },
+  });
 });

@@ -10,6 +10,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" />
@@ -42,7 +43,7 @@
 
     <!-- Banner -->
     <section id="banner">
-      <div class="inner">
+      <div class="inner fade-in">
         <h2>Lumiere</h2>
         <p>人をつなぎ、信頼を生む。<br>チームワークで支えるコールセンター</p>
         <!-- <ul class="actions special">
@@ -50,14 +51,18 @@
         </ul> -->
       </div>
       <a href="#one" class="more scrolly">Learn More</a>
+      <!-- <div class="wave">
+        <img src="./images/wave.svg" alt="">
+
+      </div> -->
     </section>
 
     <!-- One -->
     <section id="one" class="wrapper style1 special">
       <div class="section__inner">
-        <div class="inner">
+        <div class="inner fade-in">
           <header class="major">
-            <h2>「個の力 × チームの力 = 最高のカスタマーサポート」</h2>
+            <h2>「個の力 × チームの力 =<br class="sp">最高のカスタマーサポート」</h2>
             <p>「一人ひとりの光が集まり、仕事もチームも輝く会社。」<br>私たちはチームワークを大切にし、みんなで支え合いながら成長し続けます。
             </p>
 
@@ -72,29 +77,67 @@
     </section>
 
     <!-- Two -->
-    <section id="two" class="wrapper alt style2">
+    <section id="two" class="wrapper">
       <div class="section__inner">
-        <h2>our Service</h2>
+        <h2 class="fade-in">our Service</h2>
         <!-- <div class="service__img">
           <img src="images/spotlight02.jpg" alt="" />
 
         </div> -->
 
         <div class="service__content">
-          <ul>
-            <li>
-              <h3>長年の経験を持つスタッフが対応の質を保証</h3>
-              <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-            </li>
-            <li>
-              <h3>成果に直結する営業スキルを持ったオペレーターが対応</h3>
-              <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-            </li>
-            <li>
-              <h3>一人じゃない、チーム全体でのサポートで安定した品質</h3>
-              <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-            </li>
-          </ul>
+          <div class="section__content-wrap">
+
+            <div class="section__content">
+              <div class="section__content-card">
+                <div class="section__content-card-img">
+
+                  <i class="fa-solid fa-headset"></i>
+
+                  <h3>長年の経験を持つスタッフが対応の質を保証</h3>
+                  <p>長年にわたり培った知識と経験を持つスタッフが対応することで、どんなお問い合わせにも的確に対応します。<br>業界特有の課題にも柔軟に対応し、安心してご利用いただけるサポートを提供します。
+                  </p>
+                </div>
+
+              </div>
+              <div class="section__content-card">
+                <div class="section__content-card-img">
+                  <i class="fa-solid fa-people-group"></i>
+
+                  <h3>一人じゃない、チーム全体でのサポートで安定した品質</h3>
+                  <p>オペレーター同士の連携を大切にし、チーム全体で情報を共有。<br>誰が対応しても同じ高品質なサービスを提供できる体制を整えています。<br>安定した対応力で、安心感のあるサポートを実現します。
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="section__content-card">
+                <div class="section__content-card-img">
+
+                  <i class="fa-solid fa-arrow-up-right-dots"></i>
+                  <h3>顧客満足度アップのための継続的な改善を徹底</h3>
+                  <p>お客様からのフィードバックをもとに、対応品質の向上を常に意識。<br>定期的な研修やマニュアルの見直しを行い、より満足度の高いサービスを提供できるよう努めています。
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="section__content-card">
+                <div class="section__content-card-img">
+
+                  <i class="fa-solid fa-user-tie"></i>
+                  <h3>成果に直結する営業スキルを持ったオペレーターが対応</h3>
+                  <p>単なる受電対応ではなく、成果につながる提案力を備えたオペレーターが対応。<br>顧客のニーズを的確に把握し、適切なアプローチで成約率アップをサポートします。
+                  </p>
+
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
         </div>
         <!-- <section class="spotlight mt">
           <div class="image"><img src="images/mv.jpg" alt="" /></div>
@@ -160,9 +203,9 @@
     <section id="gallery" class="tm-section-pad-top">
 
       <div class="section__inner">
-        <h2>recruit</h2>
-        <div class="bite__head">
-          <p>【春先に向けて大幅増員募集♪】<br>オープニング/20～40代の女性活躍中！週払いOK！1日3h～OK！<br>在宅への切替も可能です★</p>
+        <h2 class="fade-in">recruit</h2>
+        <div class="bite__head fade-in">
+          <p>【春先に向けて大幅増員募集♪】<br>オープニング/20～40代の女性活躍中！ <br class="sp">週払いOK！1日3h～OK！<br>在宅への切替も可能です★</p>
 
           <div class="button__wrap">
             <div class="c-button">
@@ -174,7 +217,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-box">
+        <div class="swiper-box fade-in">
           <!-- Slider main container -->
           <div class="swiper1 swiper">
             <!-- Additional required wrapper -->
@@ -209,15 +252,17 @@
               </div>
             </div>
             <!-- ページネーション -->
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
             <!-- 前後の矢印 -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
             <!-- スクロールバー
-                  <div class="swiper-scrollbar"></div> -->
+              <div class="swiper-scrollbar"></div> -->
           </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
+
+
 
 
     </section>
@@ -238,11 +283,11 @@
     <section class="greet">
 
       <div class="section__inner">
-        <div class="greet__img">
+        <div class="greet__img fade-in">
           <img src="./images/logo-Lumiere.png" alt="">
         </div>
-        <h3>「人と仕事に光を。楽しく働ける環境を創る。」</h3>
-        <div class="greet__text">
+        <h3 class="fade-in">「人と仕事に光を。楽しく働ける環境を創る。」</h3>
+        <div class="greet__text fade-in">
           <p>
             皆さま、はじめまして。<br>
             私たちの会社は、「人」「仕事」「楽しさ」を大切にし、光のように明るく、前向きなエネルギーを届けることを使命としています。<br><br>
@@ -252,15 +297,19 @@
             代表　山﨑　奈緒</p>
         </div>
       </div>
+
     </section>
 
 
     <section id="company" class="section_block">
+      <div class="wave">
+
+      </div>
       <div class="section__inner">
         <div class="outer">
-          <h2>COMPANY</h2>
+          <h2 class="fade-in">COMPANY</h2>
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<table>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<table class="fade-in">
             <tbody>
               <tr>
                 <th>会社名</th>
@@ -306,7 +355,7 @@
 
 
     <!-- CTA -->
-    <section id="cta" class="wrapper style4">
+    <section id="cta" class="wrapper style4 fade-in">
       <div class="section__inner">
         <div class="inner">
           <header>
@@ -330,7 +379,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer
     <footer id="footer">
       <ul class="icons">
         <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -343,7 +392,7 @@
         <li>&copy; Untitled</li>
         <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
       </ul>
-    </footer>
+    </footer> -->
 
   </div>
 
@@ -356,6 +405,12 @@
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- GSAP本体 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- ScrollTrigger（スクロールアニメーションする場合） -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 
   <script src="assets/js/script.js"></script>
 
