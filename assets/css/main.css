@@ -2214,6 +2214,11 @@ table th {
   text-align: left;
   width: 20%;
 }
+@media screen and (max-width: 736px) {
+  table th {
+    width: 30%;
+  }
+}
 table thead {
   border-bottom: solid 2px #fff;
 }
@@ -2963,6 +2968,11 @@ body.is-menu-visible #menu {
   z-index: 10000;
   opacity: 0.8;
 }
+@media screen and (max-width: 736px) {
+  #header {
+    height: 60px;
+  }
+}
 #header h1 {
   -webkit-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
@@ -3284,6 +3294,14 @@ body.is-preload #banner:after {
     width: 100%;
   }
 }
+#cta .inner h2 {
+  text-align: left;
+}
+@media screen and (max-width: 736px) {
+  #cta .inner h2 {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 736px) {
   #cta .inner .actions {
     max-width: none;
@@ -3440,26 +3458,33 @@ body.landing #footer {
 
 #company {
   background: white;
-  margin: 100px auto 0;
+  margin: 0px auto 0;
   position: relative;
+  padding-top: 100px;
 }
 @media screen and (max-width: 736px) {
   #company {
-    margin: 50px auto 0;
+    margin: 0px auto 0;
   }
 }
 
 #company .wave {
   background-image: url("../../images/wave02.svg");
-  background-size: contain;
+  background-size: cover;
   position: absolute;
-  top: -22%;
+  top: -60px;
   width: 100%;
   height: 60px;
 }
 @media screen and (max-width: 736px) {
   #company .wave {
-    top: -10%;
+    top: -60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #company .wave {
+    height: 16px;
+    top: -16px;
   }
 }
 
@@ -3475,6 +3500,7 @@ body.landing #footer {
 @media screen and (max-width: 736px) {
   .bite__head p {
     font-size: 14px;
+    text-align: center;
   }
 }
 
@@ -3551,6 +3577,11 @@ body.landing #footer {
   margin: 50px auto 0;
 }
 @media screen and (max-width: 736px) {
+  .greet {
+    padding: 70px 0 120px;
+  }
+}
+@media screen and (max-width: 480px) {
   .greet {
     padding: 70px 0;
   }

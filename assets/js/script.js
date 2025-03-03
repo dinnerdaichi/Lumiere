@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper1', {
     delay: 3000,
   },
   speed: 1000,
-  slidesPerView: 1, //
+  slidesPerView: 1.5, //
   spaceBetween: 20, // スライド間の間隔
   loop: true, // ループ設定
   centeredSlides: true, // アクティブなスラ
